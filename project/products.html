@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products | Animal Feeds and Veterinary Products | Company Name</title>
+  <meta name="description" content="Browse Company Name's animal feed range for poultry, pigs, cattle and fish, and our veterinary product categories. Search and filter products and request a quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Company Name">
+  <meta property="og:title" content="Our Products | Company Name">
+  <meta property="og:description" content="Animal feed products and veterinary product categories with enquiry options.">
+  <meta property="og:image" content="https://images.pexels.com/photos/27083552/pexels-photo-27083552.jpeg?auto=compress&cs=tinysrgb&w=1600">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="mailto:info@yourcompany.com" data-email><i class="fa-regular fa-envelope"></i> info@yourcompany.com</a>
+      <div class="topbar__links">
+        <a href="tel:+2348148482724" data-phone-link><i class="fa-solid fa-phone"></i> <span data-phone>+234 XXX XXX XXXX</span></a>
+        <a href="https://wa.me/2348148482724" data-whatsapp target="_blank" rel="noopener noreferrer" class="topbar__hide-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Company Name home">
+        <img src="images/logo.svg" alt="Company Name logo" width="44" height="44">
+        <span class="brand__name" data-company-name>Company Name</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="primary-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html" aria-current="page">Our Products</a></li>
+          <li><a href="manufacturing.html">Feed Manufacturing</a></li>
+          <li><a href="veterinary.html">Veterinary Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="contact.html#enquiry" class="btn btn--primary nav-cta">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img src="https://images.pexels.com/photos/27083552/pexels-photo-27083552.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Large flock of chickens inside a modern poultry farm building" width="1800" height="1200">
+      </div>
+      <div class="container">
+        <div class="page-hero__content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Our Products</span>
+          </nav>
+          <span class="eyebrow">Product catalogue</span>
+          <h1>Animal feeds and veterinary products</h1>
+          <p>Browse our feed range by species and production stage, and our veterinary product categories. Send an enquiry for specifications, pack sizes and pricing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" data-catalogue>
+        <div class="search-bar">
+          <div class="filters" role="group" aria-label="Filter products by category">
+            <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All products</button>
+            <button type="button" class="filter-btn" data-filter="poultry" aria-pressed="false">Poultry feeds</button>
+            <button type="button" class="filter-btn" data-filter="pig-cattle" aria-pressed="false">Pig and cattle</button>
+            <button type="button" class="filter-btn" data-filter="fish" aria-pressed="false">Fish feed</button>
+            <button type="button" class="filter-btn" data-filter="supplement" aria-pressed="false">Supplements</button>
+            <button type="button" class="filter-btn" data-filter="veterinary" aria-pressed="false">Veterinary</button>
+          </div>
+          <div class="search-field">
+            <label for="product-search" class="visually-hidden">Search products</label>
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input type="search" id="product-search" placeholder="Search products" autocomplete="off">
+          </div>
+        </div>
+
+        <section class="catalog-section" aria-labelledby="feed-heading">
+          <div class="catalog-section__head">
+            <div>
+              <span class="eyebrow">Animal feed</span>
+              <h2 id="feed-heading">Animal Feed Products</h2>
+            </div>
+            <p>Formulated for each species and production stage. Specifications, pack sizes and availability are confirmed on enquiry.</p>
+          </div>
+          <p class="catalog-section__count" data-count></p>
+          <div class="catalog">
+            <article class="catalog-item" data-category="poultry" data-keywords="chicks broiler starter young birds">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/27083552/pexels-photo-27083552.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Broiler chickens in a poultry house" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Poultry feed</span>
+                <h3>Broiler Starter Feed</h3>
+                <p class="catalog-item__description">Feed for young broiler chicks during the early growth phase.</p>
+                <a href="contact.html?product=Broiler%20Starter%20Feed&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="poultry" data-keywords="broiler finish market weight">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/17765441/pexels-photo-17765441.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chickens in a large indoor poultry farm" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Poultry feed</span>
+                <h3>Broiler Finisher Feed</h3>
+                <p class="catalog-item__description">Feed for broilers in the finishing phase before market weight.</p>
+                <a href="contact.html?product=Broiler%20Finisher%20Feed&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="poultry" data-keywords="layers hens eggs mash laying">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/4200087/pexels-photo-4200087.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Brown hens standing indoors on a poultry farm" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Poultry feed</span>
+                <h3>Layer Mash</h3>
+                <p class="catalog-item__description">Mash feed for laying hens, formulated to support egg production.</p>
+                <a href="contact.html?product=Layer%20Mash&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="poultry" data-keywords="layers hens eggs pellets laying">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/12995534/pexels-photo-12995534.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Poultry feeding from red feeders in a bright coop" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Poultry feed</span>
+                <h3>Layer Pellets</h3>
+                <p class="catalog-item__description">Pelleted feed for laying flocks, designed for consistent intake at the feeder.</p>
+                <a href="contact.html?product=Layer%20Pellets&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="poultry" data-keywords="grower growing birds rearing">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/35877061/pexels-photo-35877061.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Extensive view of white chickens raised indoors" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Poultry feed</span>
+                <h3>Grower Feed</h3>
+                <p class="catalog-item__description">Feed for growing birds between the starter stage and the laying or finishing stage.</p>
+                <a href="contact.html?product=Grower%20Feed&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="poultry" data-keywords="chick mash day old chicks">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/35877058/pexels-photo-35877058.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Busy flock of white chickens on a poultry farm" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Poultry feed</span>
+                <h3>Chick Mash</h3>
+                <p class="catalog-item__description">Fine mash feed for day-old and young chicks.</p>
+                <a href="contact.html?product=Chick%20Mash&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="fish" data-keywords="fish aquaculture carp pond floating">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/11035625/pexels-photo-11035625.jpeg?auto=compress&cs=tinysrgb&w=400" alt="School of carp swimming in clear water" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Fish feed</span>
+                <h3>Fish Feed</h3>
+                <p class="catalog-item__description">Feed formulated for farmed fish in pond and floating pen systems.</p>
+                <a href="contact.html?product=Fish%20Feed&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="pig-cattle" data-keywords="pig pigs swine pork grower finisher sow">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/2737171/pexels-photo-2737171.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Group of pigs in a pigpen on a farm" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Pig feed</span>
+                <h3>Pig Feed</h3>
+                <p class="catalog-item__description">Feed for pigs at grower, finisher and breeding stages.</p>
+                <a href="contact.html?product=Pig%20Feed&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="pig-cattle" data-keywords="cattle cows beef dairy ruminant">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/39003779/pexels-photo-39003779.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Farmer walking beside a cow in a grassy field" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag">Cattle feed</span>
+                <h3>Cattle Feed</h3>
+                <p class="catalog-item__description">Feed for cattle, formulated to support growth and productivity.</p>
+                <a href="contact.html?product=Cattle%20Feed&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="supplement" data-keywords="concentrate concentrates supplement premix protein minerals mix">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/34952074/pexels-photo-34952074.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Close-up of brown feed pellets" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Feed supplement</span>
+                <h3>Concentrates and Feed Supplements</h3>
+                <p class="catalog-item__description">Protein and mineral concentrates that are mixed with grains to complete a ration.</p>
+                <a href="contact.html?product=Concentrates%20and%20Feed%20Supplements&amp;category=Animal%20Feed%20Purchase#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="catalog-section" aria-labelledby="vet-heading">
+          <div class="catalog-section__head">
+            <div>
+              <span class="eyebrow">Veterinary</span>
+              <h2 id="vet-heading">Veterinary Products</h2>
+            </div>
+            <p>Supplied for use under the guidance of a qualified veterinary professional.</p>
+          </div>
+          <div class="notice notice--info" style="margin: 24px 0 8px;">
+            <p><strong>Veterinary use notice:</strong> Veterinary medicines and vaccines must be used under the guidance of a qualified veterinary professional. Always read the product label and follow the directions for use. Dosages, approved uses and registration status are confirmed on enquiry.</p>
+          </div>
+          <p class="catalog-section__count" data-count></p>
+          <div class="catalog">
+            <article class="catalog-item" data-category="veterinary" data-keywords="antibiotic antibiotics bacterial infection drug">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/13060613/pexels-photo-13060613.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Medical vials and a syringe on a stainless steel tray" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Veterinary drug</span>
+                <h3>Antibiotics</h3>
+                <p class="catalog-item__description">Veterinary antibiotic products, supplied for use as directed by a licensed veterinarian.</p>
+                <a href="contact.html?product=Antibiotics&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="veterinary" data-keywords="dewormer deworming worms parasites anthelmintic">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/9259964/pexels-photo-9259964.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Empty glass vials arranged in a laboratory" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Veterinary drug</span>
+                <h3>Dewormers</h3>
+                <p class="catalog-item__description">Products for the control of internal parasites in livestock and poultry.</p>
+                <a href="contact.html?product=Dewormers&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="veterinary" data-keywords="vitamins minerals supplements nutrition">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/9628806/pexels-photo-9628806.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Brown glass bottles on a laboratory shelf" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Animal health</span>
+                <h3>Vitamins and Minerals</h3>
+                <p class="catalog-item__description">Vitamin and mineral products to support general animal health and performance.</p>
+                <a href="contact.html?product=Vitamins%20and%20Minerals&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="veterinary" data-keywords="vaccines vaccine immunisation immunization vaccination">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/5922103/pexels-photo-5922103.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gloved hand holding a transparent vial of liquid" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Veterinary vaccine</span>
+                <h3>Vaccines</h3>
+                <p class="catalog-item__description">Vaccines for poultry and livestock, administered as directed by a veterinary professional.</p>
+                <a href="contact.html?product=Vaccines&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="veterinary" data-keywords="antiparasitic ectoparasites mites lice ticks external parasites">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/9259962/pexels-photo-9259962.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Vials arranged in a laboratory rack" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Veterinary drug</span>
+                <h3>Antiparasitic Products</h3>
+                <p class="catalog-item__description">Products for the management of external and internal parasites in animals.</p>
+                <a href="contact.html?product=Antiparasitic%20Products&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="veterinary" data-keywords="poultry healthcare birds flock health chickens">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/35877058/pexels-photo-35877058.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Busy flock of white chickens on a poultry farm" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Poultry health</span>
+                <h3>Poultry Healthcare Products</h3>
+                <p class="catalog-item__description">Healthcare products for poultry flocks, from routine care to flock management.</p>
+                <a href="contact.html?product=Poultry%20Healthcare%20Products&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="veterinary" data-keywords="livestock supplements cattle sheep goats pigs herd">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/30689843/pexels-photo-30689843.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Farmer tending two calves in an open field" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Livestock</span>
+                <h3>Livestock Supplements</h3>
+                <p class="catalog-item__description">Supplements for cattle, sheep, goats and pigs to support herd nutrition.</p>
+                <a href="contact.html?product=Livestock%20Supplements&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+            <article class="catalog-item" data-category="veterinary" data-keywords="disinfectants biosecurity hygiene cleaning farm sanitation">
+              <div class="catalog-item__image">
+                <img src="https://images.pexels.com/photos/8666436/pexels-photo-8666436.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Medicine bottles arranged on a reflective surface" width="400" height="400" loading="lazy">
+              </div>
+              <div class="catalog-item__body">
+                <span class="tag tag--gold">Biosecurity</span>
+                <h3>Disinfectants and Biosecurity Products</h3>
+                <p class="catalog-item__description">Disinfectants and hygiene products for farm cleaning and biosecurity programmes.</p>
+                <a href="contact.html?product=Disinfectants%20and%20Biosecurity%20Products&amp;category=Veterinary%20Products#enquiry" class="btn btn--outline btn--small">Enquire about this product</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="catalog-empty" id="catalog-empty" role="status">
+          <p>No products match your search. Try a different word or choose another category.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner" data-reveal>
+        <div>
+          <h2>Not sure which product fits your operation?</h2>
+          <p>Send us your species, production stage and quantity. Our sales team will recommend suitable products and confirm pricing.</p>
+        </div>
+        <div class="btn-group">
+          <a href="contact.html#enquiry" class="btn btn--gold">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="images/logo.svg" alt="Company Name logo" width="44" height="44">
+            <span class="brand__name" data-company-name>Company Name</span>
+          </a>
+          <p>Manufacturing animal feeds and supplying veterinary products for farmers, livestock businesses and agricultural enterprises.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/2348148482724" class="social-link" data-whatsapp target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="manufacturing.html">Feed Manufacturing</a></li>
+            <li><a href="veterinary.html">Veterinary Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Animal feeds</h3>
+          <ul>
+            <li><a href="products.html?filter=poultry">Poultry feeds</a></li>
+            <li><a href="products.html?filter=pig-cattle">Pig and cattle feeds</a></li>
+            <li><a href="products.html?filter=fish">Fish feeds</a></li>
+            <li><a href="products.html?filter=supplement">Concentrates and supplements</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><span class="editable">[Company address, City, Nigeria]</span></li>
+            <li><a href="tel:+2348148482724" data-phone-link data-phone>+234 XXX XXX XXXX</a></li>
+            <li><a href="mailto:info@yourcompany.com" data-email>info@yourcompany.com</a></li>
+            <li><a href="contact.html">Business hours and directions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>&copy; 2026 <span data-company-name>Company Name</span>. All rights reserved.</p>
+        <div class="footer-bottom__links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
